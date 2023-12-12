@@ -1,0 +1,196 @@
+/* Setting Fonts for Page */
+* {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+}
+
+body {
+    background-color: #E0E1DD;
+}
+
+/* Nav Bar formatting */
+ul {
+    padding-right: 5px;
+}
+
+.navbar{
+    z-index: 6;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+li .nav-link.active{
+    text-transform: uppercase;
+    padding-right: 25px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+li .nav-link.active:hover{
+    color: #0082C6;
+}
+
+/* STYLING FOR SERVICES PAGE */
+h1 {
+    margin-bottom: 0;
+    color: #E0E1DD;
+    background-color: #232325;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 90px;
+    text-align: center;
+}
+
+h2{
+    font-weight: bold;
+    color: #0082C6;
+}
+
+p{
+    font-size: 18px;
+}
+
+section{
+    display: grid;
+    z-index: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 20%);
+}
+
+.containerL {
+    background-color: #E0E1DD;
+    grid-column-start: 1;
+}
+
+.containerD {
+    background-color: #232325;
+    grid-column-start: 2;
+}
+
+#sec1{
+    grid-row-start: 1;
+}
+
+#sec2{
+    grid-row-start: 2;
+}
+
+#sec3{
+    grid-row-start: 3;
+}
+
+#sec4{
+    grid-row-start: 4;
+}
+
+#sec5{
+    grid-row-start: 5;
+}
+
+
+.picL{
+    z-index: 2;
+    grid-column-start: 1;
+    margin: auto;
+    width: 60%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.picR{
+    z-index: 2;
+    grid-column-start: 2;
+    margin: auto;
+    width: 60%;
+    height: 70%;
+    object-fit: cover;
+}
+
+#pic1{
+    grid-row-start: 1;
+}
+
+#pic2{
+    grid-row-start: 2;
+}
+
+#pic3{
+    grid-row-start: 3;
+}
+
+#pic4{
+    grid-row-start: 4;
+    object-position: bottom;
+}
+
+#pic5{
+    grid-row-start: 5;
+}
+
+.containerL{
+    z-index: 2;
+    padding-top: 55%;
+    padding-left: 15%;
+    padding-right: 8%;
+    text-align: right;
+}
+.containerD{
+    z-index: 2;
+    padding-top: 55%;
+    padding-right: 15%;
+    padding-left: 8%;
+    text-align: left;
+}
+
+section img{
+    transition: all;
+    transition-duration: 1s;
+}
+section img:hover{
+    transform: scale(1.1);
+}
+
+/* FOOTER SECTION FORMATTING */
+footer {
+    text-align: center;
+    background-color: #232325;
+}
+
+span {
+    font-weight: bold;
+}
+
+#quickID {
+    padding-top: 20px;
+}
+
+
+#quickID p {
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    display: inline;
+    margin: 0 40px;
+    color: #E0E1DD;
+}
+
+
+#socials i {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: #E0E1DD;
+    display: flex;
+    display: inline-block;
+    align-self: center;
+    margin: 0 10px;   
+    transition: all;
+    transition-duration: 1s;
+}
+
+i:hover {
+    transform: scale(1.2);
+    color: #0082C6;
+}
