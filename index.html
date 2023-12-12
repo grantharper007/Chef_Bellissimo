@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Great+Vibes&display=swap"
+    rel="stylesheet">
+
+  <!-- Link to FontAwesome -->
+  <script src="https://kit.fontawesome.com/5a53f72dce.js" crossorigin="anonymous"></script>
+
+  <!-- Link to Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Chef Bellissimo</title>
+</head>
+
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark border-bottom border-body"
+      data-bs-theme="dark">
+      <div class="container-fluid">
+        <!-- CHANGE FROM NAME TO LOGO WHEN FINISHED -->
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="logo.png" alt="Bootstrap" width="75" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-primary-emphasis" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="menus.html">Menus</a>
+            </li>
+          </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Opening Screen -->
+  <section id="openingScreen">
+    <div id="videoContainer">
+      <video src="backgroudVideo.mp4" autoplay loop muted></video>
+    </div>
+    <div id="cover">
+    </div>
+    <div id="content">
+      <h2>Marco Bellissimo</h2>
+      <p id="words">Welcome to the Culinary World of Marco Bellissimo, where passion meets perfection on every plate. <br>Join us in savoring the artistry of Marco Bellissimo— a culinary experience that goes beyond the extraordinary.</p>
+      <p id="slogan">LOCAL. FRESH. REAL.</p>
+    </div>
+  </section>
+  
+  <section id="about">
+    <div class="container">
+      <div id="aboutInfo">
+        <h1>About</h1>
+        <p><span id="welcome">Hello and Bon Appétit!</span> <br>
+          Hello I'm <span>Marco Bellissimo</span>, your passport to a world of exquisite flavors and culinary delights. As a passionate personal chef, <span>I bring a symphony of tastes and a touch of elegance to your dining experience</span>. I'm not just a chef; I'm an <span>artist in the kitchen</span>, crafting each dish with precision and love. My culinary journey began in the enchanting kitchens of Italy, where <span>I cultivated a deep appreciation</span> for
+          fresh, seasonal ingredients and the art of slow cooking. Over the years, my expertise has evolved, <span>blending traditional techniques with modern flair</span>. <br> <br>
+          Now, I'm proud to call <span>Louisville, KY,</span> home—a city that has warmly embraced my love for fine dining. Nestled in the heart of the Bluegrass State, Louisville has become the backdrop for my culinary adventures. The <span>vibrant local food scene, combined with the warm hospitality of the community, has infused new inspiration into my creations</span>. From the Kentucky Derby spirit to the rich cultural tapestry, <span>Louisville's influence is unmistakable in the dishes I craft</span>.</p>
+        </div>
+        <img id="chefPic" class="shadow-lg" src="marco.png" alt="pic of Chef">
+    </div>
+  </section>
+
+
+  <section id="gallery">
+    <div id="coverGallery"></div>
+    <h1>Meal Gallery</h1>
+    <p>Embark on a <span>sumptuous visual journey</span> through the lens of Marco Bellissimo's culinary creations in our captivating picture gallery. Each image is a meticulously curated <span>glimpse into the artistry, innovation, and passion</span> that define my culinary world. Here, we invite you to <span>immerse yourself in a kaleidoscope of colors, textures, and flavors</span>, each photograph telling a unique story of culinary craftsmanship and dedication.</p>
+    <div id="galleryPics">
+      <img id="gallery1" class="width" src="bbq.jpg" alt="pic">
+      <img id="gallery2" class="width" src="seafood.jpg" alt="pic">
+      <img id="gallery3" class="width" src="foodBowl.jpg" alt="pic">
+      <img id="gallery4" class="width" src="frenchToast.jpg" alt="pic">
+      <img id="gallery5" class="width" src="platedFood.jpg" alt="pic">
+    </div>
+    </div>
+  </section>
+
+
+  <section id="reviews">
+    <div id="containerRev">
+      <h1 class="d-inline">Reviews</h1>
+      <!-- *** ADD WORDS LATER *** -->
+      <p id="reviewP">Step into the world of Marco Bellissimo <span>through the eyes and taste buds of our delighted patrons</span>. Our <span>customer reviews</span> reflect the resounding applause for Marco's culinary artistry and <span>commitment to delivering exceptional dining experiences</span>. Here's what our cherished customers have to say about their gastronomic adventures with Marco: </p>
+      <!-- *** ADD SLIDE IMAGES *** -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="review(1).svg" class="d-inline w-100" alt="reviews picture">
+          </div>
+          <div class="carousel-item">
+            <img src="review(2).svg" class="d-inline w-100" alt="reviews picture">
+          </div>
+          <div class="carousel-item">
+            <img src="review(3).svg" class="d-inline w-100" alt="reviews picture">
+          </div>
+          <div class="carousel-item">
+            <img src="review(4).svg" class="d-inline w-100" alt="reviews picture">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div id="quickID">
+      <p>Phone: 123-456-7890 </p>
+      <p>Email: exampleEmailaddress@email.com</p>
+      <p>Address: 123 Address, State, Zip</p>
+    </div>
+    <div id="socials">
+      <!-- *** REMEMBER TO ADD THE LINKS ***-->
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+      <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
