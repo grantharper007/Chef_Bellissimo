@@ -3,8 +3,12 @@
 /* Fonts:
 
 
+
+
 Body and normal text:
 font-family: 'Cormorant Garamond', serif;
+
+
 
 
 Heading text:
@@ -12,17 +16,25 @@ font-family: 'Great Vibes', cursive;
 */
 
 
+
+
 /* Colors:
 blue color:
 #0082C6
+
+
 
 
 dark color:
 #232325
 
 
+
+
 light color:
 #E0E1DD
+
+
 
 
 white:
@@ -30,19 +42,24 @@ white:
 */
 
 
+
+
 /* Setting Fonts for Page */
 * {
     font-family: 'Cormorant Garamond', serif;
 }
 
+
 h1 {
     font-family: 'Great Vibes', cursive;
 }
+
 
 /* Nav Bar formatting */
 ul {
     padding-right: 5px;
 }
+
 
 .navbar {
     z-index: 6;
@@ -51,16 +68,21 @@ ul {
     top: 0;
 }
 
+
 li .nav-link.active {
     text-transform: uppercase;
+
 
     transition: all;
     transition-duration: 0.5s;
 }
 
+
 li .nav-link.active:hover {
     color: #0082C6;
 }
+
+
 
 
 /* Opening Screen Formatting */
@@ -74,6 +96,7 @@ li .nav-link.active:hover {
     background-size: cover;
 }
 
+
 #cover {
     z-index: 2;
     width: 100%;
@@ -84,13 +107,16 @@ li .nav-link.active:hover {
     background-color: rgba(0, 0, 0, .8);
 }
 
+
 #cover #border {
     margin-top: 40%;
 }
 
+
 nav {
     z-index: 3;
 }
+
 
 video {
     top: 0;
@@ -102,6 +128,7 @@ video {
     position: absolute;
     object-fit: cover;
 }
+
 
 #content {
     margin: 0 8%;
@@ -117,11 +144,14 @@ video {
 }
 
 
+
+
 #content h2 {
     font-size: 100px;
     grid-row-start: 2;
     grid-column-start: 1;
 }
+
 
 #content #words {
     grid-row-start: 3;
@@ -129,6 +159,7 @@ video {
     font-size: 20px;
     text-overflow: wrap;
 }
+
 
 #content #slogan {
     grid-row-start: 1;
@@ -140,15 +171,19 @@ video {
     animation: colorChange 5s infinite forwards;
 }
 
+
 @keyframes colorChange {
     50% {
         color: #0082C6;
     }
 
+
     100% {
         color: #E0E1DD;
     }
 }
+
+
 
 
 #content img {
@@ -160,26 +195,32 @@ video {
     right: 40px;
 }
 
+
 #border {
     z-index: 2;
     width: 100%;
 }
 
+
 /* ABOUT SECTION FORMATTING */
 #about {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: 4;
-    margin: 20% 0 10% 0;
-    width: 100vw;
 }
 
+
 #about .container {
-    height: 90%;
     display: grid;
     grid-template-columns: 50% 44%;
     grid-template-rows: 1;
     column-gap: 6%;
-    padding-top: 1%;
 }
+
 
 #about #chefPic {
     grid-column-start: 1;
@@ -192,30 +233,36 @@ video {
     transition-duration: 1s;
 }
 
+
 #about #chefPic:hover {
     border-radius: 200px;
 }
 
+
 #aboutInfo {
-    padding-top: 10%;
     grid-column-start: 2;
     display: block;
 }
 
-.aboutInfo h1 {
-    padding-top: 4%;
+
+#aboutInfo h1 {
+    text-align: center;
+    font-size: 60px;
     justify-content: center;
 }
 
-.aboutInfo p {
-    font-size: 20px;
+
+#aboutInfo p {
+    font-size: 25px;
 }
 
+
 #welcome {
-    font-size: 25px;
+    font-size: 35px;
     text-decoration: underline;
     color: #0082C6;
 }
+
 
 /* GALLERY FORMATTING */
 #gallery {
@@ -224,6 +271,7 @@ video {
     background-color: #232325;
     color: #E0E1DD;
 }
+
 
 #gallery h1 {
     z-index: 5;
@@ -236,11 +284,13 @@ video {
     align-items: center;
 }
 
+
 #gallery p {
     text-align: center;
     font-size: 24px;
     padding: 2% 10%;
 }
+
 
 #gallery span {
     font-weight: bold;
@@ -248,9 +298,11 @@ video {
     transition-duration: 0.5s;
 }
 
+
 #gallery span:hover {
     color: white;
 }
+
 
 #galleryPics {
     display: grid;
@@ -259,14 +311,15 @@ video {
     row-gap: 9%;
     column-gap: 5%;
     margin: 0 5%;
-    padding-bottom: 12%;
-    padding-top: 0;
+    padding: 10% 0 14%;
 }
+
 
 .width {
     width: 100%;
     height: 100%;
 }
+
 
 #galleryPics img {
     opacity: 0.7;
@@ -274,9 +327,11 @@ video {
     object-fit: cover;
 }
 
+
 #galleryPics img:hover {
     opacity: 1;
 }
+
 
 #galleryPics #gallery1 {
     grid-column-start: 1;
@@ -285,12 +340,14 @@ video {
     grid-row-end: 3;
 }
 
+
 #galleryPics #gallery2 {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }
+
 
 #galleryPics #gallery3 {
     grid-column-start: 4;
@@ -300,12 +357,14 @@ video {
     padding-right: 0;
 }
 
+
 #galleryPics #gallery4 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
 
 #galleryPics #gallery5 {
     grid-column-start: 3;
@@ -316,6 +375,8 @@ video {
 }
 
 
+
+
 /* REVIEWS SECTION FORMATTING */
 #containerRev {
     margin: 90px 40px;
@@ -324,8 +385,9 @@ video {
     display: grid;
     grid-template-columns: 1.5fr 3fr;
     grid-template-rows: 0.5fr 3fr;
-    column-gap: 2%;
+    column-gap: 5%;
 }
+
 
 #containerRev h1 {
     font-size: 60px;
@@ -333,27 +395,37 @@ video {
     grid-row-start: 1;
 }
 
+
 #containerRev p {
     grid-column-start: 1;
     grid-row-start: 2;
 }
 
+
 #containerRev #carouselExampleIndicators {
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 3;
 }
 
 
-/* REVIEWS SECTION FORMAT */
 #reviewP {
     font-size: 20px;
 }
+
 
 /* FOOTER SECTION FORMATTING */
 footer {
     text-align: center;
     background-color: #232325;
+}
+
+
+#quickID p {
+    display: inline-block;
+    text-wrap: nowrap;
+    color: #E0E1DD;
+    text-decoration: none;
 }
 
 
@@ -364,13 +436,17 @@ span {
     transition-duration: 0.3s;
 }
 
+
 span:hover {
     color: #232325;
 }
 
+
 #quickID {
     padding-top: 20px;
 }
+
+
 
 
 #quickID p {
@@ -378,8 +454,11 @@ span:hover {
     justify-content: space-evenly;
     display: inline;
     margin: 0 40px;
+    font-size: 16px;
     color: #E0E1DD;
 }
+
+
 
 
 #socials i {
@@ -395,18 +474,21 @@ span:hover {
     transition-duration: 1s;
 }
 
+
 i:hover {
     transform: scale(1.2);
     color: #0082C6;
 }
 
-@media (max-width: 1178) {
+
+@media (max-width: 1000px) {
     #quickID p {
-        padding-bottom: 3%;
+        font-size: 12px;
         display: block;
-        font-size: 11px;
+        padding-bottom: 3%;
     }
 }
+
 
 @media (max-width: 768px) {
     #content {
@@ -414,57 +496,76 @@ i:hover {
         row-gap: 1%;
     }
 
-    #content h2 {
-        font-size: 80px;
+
+    #words {
+        font-size: 15px;
     }
+
+
+    #content h2 {
+        font-size: 74px;
+    }
+
 
     #content p {
         font-size: 15px;
     }
 
+
     #aboutInfo {
         padding-top: 0;
     }
+
 
     #about .container {
         display: block;
     }
 
+
     #about h1 {
-        font-size: 45px;
-        padding-left: 40%;
+        font-size: 55px;
+        padding: 5% 32% 0 35%;
     }
+
 
     #about p {
         font-size: 12px;
+        padding-bottom: 6%
     }
+
 
     #gallery h1 {
         font-size: 45px;
     }
+
 
     #gallery p {
         padding-top: 4%;
         font-size: 14px;
     }
 
+
     #reviews #containerRev {
         margin: 5% 8%;
         display: inline-block;
     }
 
+
     #reviews #containerRev h1 {
         font-size: 45px;
     }
+
 
     #reviewP {
         font-size: 14px;
     }
 
+
     footer {
         z-index: 4;
     }
 }
+
 
 @media (max-width: 530px) {
     #aboutInfo {
