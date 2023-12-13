@@ -1,36 +1,41 @@
 /* Setting Fonts for Page */
 * {
     font-family: 'Cormorant Garamond', serif;
-}
-
-h1 {
+ }
+ 
+ 
+ h1 {
     font-family: 'Great Vibes', cursive;
-}
-
-/* Nav Bar formatting */
-ul {
+ }
+ 
+ 
+ /* Nav Bar formatting */
+ ul {
     padding-right: 5px;
-}
-
-.navbar{
+ }
+ 
+ 
+ .navbar{
     z-index: 6;
     position: fixed;
     width: 100%;
     top: 0;
-}
-
-li .nav-link.active{
+ }
+ 
+ 
+ li .nav-link.active{
     text-transform: uppercase;
     padding-right: 25px;
     transition: all;
     transition-duration: 0.5s;
-}
-li .nav-link.active:hover{
+ }
+ li .nav-link.active:hover{
     color: #0082C6;
     font-size: 17px;
-}
-
-h1 {
+ }
+ 
+ 
+ h1 {
     margin-bottom: 0;
     color: #E0E1DD;
     background-color: #232325;
@@ -38,133 +43,163 @@ h1 {
     padding-bottom: 30px;
     font-size: 90px;
     text-align: center;
-}
-
-h2{
+ }
+ 
+ 
+ h2{
     font-weight: bold;
     color: #0082C6;
-}
-
-p{
+ }
+ 
+ 
+ p{
     font-size: 18px;
-}
-
-section{
+ }
+ 
+ 
+ section{
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: repeat(5, 20%);
-}
-
-#sec1{
+ }
+ 
+ 
+ #sec1{
     grid-template-columns: repeat(2, 45%);
     background-color: #E0E1DD;
     grid-template-rows: 100%;
     display: grid;
     padding: 5% 10%;
     column-gap: 10%;
-}
-#sec2{
+ }
+ #sec2{
     grid-template-columns: repeat(2, 45%);
     background-color: #232325;
     display: grid;
     grid-template-rows: 100%;
     padding: 5% 10%;
     column-gap: 10%;
-}
-#sec3{
+ }
+ #sec3{
     grid-template-columns: repeat(2, 45%);
     background-color: #E0E1DD;
     grid-template-rows: 100%;
     display: grid;
     padding: 5% 10%;
     column-gap: 10%;
-}
-#sec4{
+ }
+ #sec4{
     grid-template-columns: repeat(2, 45%);
     background-color: #232325;
     grid-template-rows: 100%;
     display: grid;
     padding: 5% 10%;
     column-gap: 10%;
-}
-#sec5{
+ }
+ #sec5{
     background-color: #E0E1DD;
     grid-template-columns: repeat(2, 45%);
     grid-template-rows: 100%;
     display: grid;
     padding: 5% 10%;
     column-gap: 10%;
-}
-.picL{
+ }
+ .picL{
     width: 100%;
     height: 100%;
     object-fit: cover;
     grid-column-start: 1;
     grid-row-start: 1;
     object-position: center;
-}
-.picR{
+ }
+ .picR{
     width: 100%;
     height: 100%;
     object-fit: cover;
     grid-column-start: 2;
     grid-row-start: 1;
     object-position: center;
-}
-.connecterL{
+ }
+ .connecterL{
     padding-top: 70%;
     text-align: right;
     grid-column-start: 1;
     grid-row-start: 1;
-}
-.connecterR{
+ }
+ .connecterR{
     padding-top: 70%;
     text-align: left;
     grid-column-start: 2;
     grid-row-start: 1;
-}
-
-img:not(#logo){
+ }
+ 
+ 
+ img:not(#logo){
     opacity: 0.9;
     transition: all;
     transition-duration: 1s;
-}
-img:not(#logo):hover{
+ }
+ img:not(#logo):hover{
     opacity: 1;
     transform: scale(1.03);
-}
-
-p{
+ }
+ 
+ 
+ p{
     font-size: 20px;
-}
-
-
-/* FOOTER SECTION FORMATTING */
-footer {
-    z-index: 6;
+ }
+ 
+ 
+ 
+ 
+ //* FOOTER SECTION FORMATTING */
+ footer {
     text-align: center;
     background-color: #232325;
-}
-
-span {
+ }
+ 
+ 
+ #quickID p{
+    display: inline-block;
+    text-wrap: nowrap;
+    color: #E0E1DD;
+    text-decoration: none;
+ }
+ 
+ 
+ span {
     font-weight: bold;
-}
-
-#quickID {
+    transition: all;
+    color: #0082C6;
+    transition-duration: 0.3s;
+ }
+ 
+ 
+ span:hover {
+    color: #232325;
+ }
+ 
+ 
+ #quickID {
     padding-top: 20px;
-}
-
-
-#quickID p {
+ }
+ 
+ 
+ 
+ 
+ #quickID p {
     text-transform: uppercase;
     justify-content: space-evenly;
     display: inline;
     margin: 0 40px;
+    font-size: 16px;
     color: #E0E1DD;
-}
-
-
-#socials i {
+ }
+ 
+ 
+ 
+ 
+ #socials i {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 25px;
@@ -172,26 +207,32 @@ span {
     display: flex;
     display: inline-block;
     align-self: center;
-    margin: 0 10px;   
+    margin: 0 10px;
     transition: all;
     transition-duration: 1s;
-}
-
-i:hover {
+ }
+ 
+ 
+ i:hover {
     transform: scale(1.2);
     color: #0082C6;
-}
-
-@media (max-width: 1178) {
-    #quickID p {
-        padding-bottom: 3%;
+ }
+ 
+ 
+ @media (max-width: 1000px) {
+    #quickID p{
+        font-size: 12px;
         display: block;
-        font-size: 11px;
+        padding-bottom: 3%;
     }
-}
-
-@media (max-width: 768px) {
+ }
+ 
+ 
+ @media (max-width: 768px) {
     p{
         font-size: 15px;
     }
-}
+ }
+ 
+ 
+ 
